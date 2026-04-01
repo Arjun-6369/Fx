@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    background: rebeccapurple;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* NEW container instead of center */
+.container {
+    background: white;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    width: 350px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-spacing: 0 15px;
+}
+
+td:first-child {
+    font-weight: bold;
+    color: #555;
+}
+
+/* Inputs + datalist input */
+input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 5px rgba(102,126,234,0.5);
+}
+
+/* Button styling (NEW) */
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 6px;
+    background: #667eea;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #5a6fd8;
+}

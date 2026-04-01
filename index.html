@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>French Express Bill</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- External JS -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>FRENCH EXPRESS</h1>
+
+    <table>
+
+        <tr>
+            <td>DATE</td>
+            <td><input type="date" id="date"></td>
+        </tr>
+
+        <tr>
+            <td>Pod_START</td>
+            <td><input type="number" id="start"></td>
+        </tr>
+
+        <tr>
+            <td>Pod_END</td>
+            <td><input type="number" id="end"></td>
+        </tr>
+
+        <!-- <tr>
+            <td>Weight</td>
+            <td><input type="number" id="weight"></td>
+        </tr> -->
+
+        <tr>
+            <td>Price_Kg</td>
+            <td><input type="number" id="price"></td>
+        </tr>
+
+        <tr>
+            <td>Place</td>
+            <td><input type="text" id="place" placeholder="Enter place"></td>
+        </tr>
+        <tr>
+            <td>Customer</td>
+            <td>
+                <input list="customers" id="customer" placeholder="Select or type" oninput="updateBranches()">
+
+                <datalist id="customers">
+                    <option value="State Bank of India">
+                    <option value="Bank of Baroda">
+                </datalist>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Branch</td>
+            <td>
+                <input list="branches" id="branch" placeholder="Select branch">
+
+                <datalist id="branches"></datalist>
+            </td>
+        </tr>                
+    </table>
+
+    <!-- Button -->
+     <button type="button" onclick="goToBill()">Calculate</button>
+    
+
+</div>
+
+</body>
+</html>
